@@ -1,12 +1,29 @@
 import Card from "./components/Card";
 import Button from "./components/Button";
+import data from "./data/data";
 
 function App() {
   return (
-    <section>
-      <h1>Our pricing</h1>
-    <Card title="Basic"  price="$19.99" feature1="500 BG Storage" feature2="2 Users Allowed" feature3="Send up to 3 GB" />
-    </section>
+    <>
+    <section className="bg-clr-primary">
+    <h1>Our pricing</h1>
+    <ul>
+
+    {data.map((plan) => (
+      <li key={plan.id}>
+        <Card
+          title={plan.title}
+          price={plan.price}
+          storage={plan.storage}
+          users={plan.users}
+          upside={plan.upside}  
+
+        />
+      </li>
+    ))}
+    </ul>
+   </section>
+    </>
   );
 }
 
