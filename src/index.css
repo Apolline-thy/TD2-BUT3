@@ -1,0 +1,44 @@
+/* index.css */
+@import "tailwindcss";
+
+@theme inline {
+  --clr-primary: var(--clr-primary);
+  --clr-secondary: var(--clr-secondary);
+  --clr-very-light-grayish-blue: var(--clr-very-light-grayish-blue);
+  --clr-light-grayish-blue: var(--clr-light-grayish-blue);
+  --clr-grayish-blue: var(--clr-grayish-blue);
+  --clr-dark-grayish-blue: var(--clr-grayish-blue);
+
+  --background-image-bg: var(--gradient-primary);
+}
+
+@layer base {
+  :root {
+    --clr-primary: hsl(236, 72%, 79%);
+    --clr-secondary: hsl(237, 63%, 64%);
+    --clr-very-light-grayish-blue: hsl(240, 78%, 98%);
+    --clr-light-grayish-blue: hsl(234, 14%, 74%);
+    --clr-grayish-blue: hsl(233, 13%, 49%);
+    --clr-dark-grayish-blue: hsl(232, 13%, 33%);
+
+    --gradient-primary: linear-gradient(
+      180deg,
+      var(--clr-primary) 0%,
+      var(--clr-secondary) 100%
+    );
+  }
+
+  .dark-mode{
+    fg-color: var(--clr-very-light-grayish-blue);
+    bg-color: var(--clr-dark-grayish-blue);
+  }
+
+  .body{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    font-size: 15px;
+
+  }
+
+  
+}
