@@ -11,7 +11,7 @@ function Card({ id, title, price, storage, users, upside }) {
         <li>{upside}</li>
       </ul>
 
-      <Button>Click me</Button>
+      <Button>Learn more</Button>
     </section>
   );
 }
