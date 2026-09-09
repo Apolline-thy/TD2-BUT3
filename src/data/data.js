@@ -6,7 +6,9 @@ const data = [
     storage: "10GB storage",
     users: "2 users allowed",
     upside: "Send up to 3GB",
-
+    monthlyPrice: "$19.99",
+    annualPrice: "$199.99",
+    active: false
   },
 
     {
@@ -16,7 +18,9 @@ const data = [
     storage: "1TB storage",
     users: "5 users allowed",
     upside: "Send up to 10GB",
-    
+    monthlyPrice: "$24.99",
+    annualPrice: "$249.99",
+    active: true
   },
 
     {
@@ -26,7 +30,9 @@ const data = [
     storage: "2TB storage",
     users: "10 users allowed",
     upside: "Send up to 20GB",
-    
+    monthlyPrice: "$39.99",
+    annualPrice: "$399.99",
+    active: false
   },
 ];
 

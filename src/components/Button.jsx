@@ -1,9 +1,8 @@
-function Button({ children, className }) {
+function Button({ children, active}) {
   return (
     <button
-      className={
-        "${className} nl-auto px-10 py-1 text-white bg-clr-primary rounded hover:bg-clr-secondary "
-      }
+      type="button"
+      className={`nl-auto px-10 py-1 text-white rounded bg-bg hover:bg-[var(--clr-secondary)] ${active ? 'bg-white' : ''}`}
     >
       {children}
     </button>

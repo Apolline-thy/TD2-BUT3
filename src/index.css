@@ -1,4 +1,4 @@
-/* index.css */
+
 @import "tailwindcss";
 
 @theme inline {
@@ -37,8 +37,7 @@
     font-family: 'Montserrat', sans-serif;
     font-weight: 700;
     font-size: 15px;
-    
-
+    background-color: var(--clr-primary);
   }
 
   
