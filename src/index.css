@@ -33,11 +33,11 @@
     bg-color: var(--clr-dark-grayish-blue);
   }
 
-  .body{
+  body{
     font-family: 'Montserrat', sans-serif;
     font-weight: 700;
     font-size: 15px;
-    background-color: var(--clr-primary);
+    background-color: var(--clr-very-light-grayish-blue);
   }
 
   

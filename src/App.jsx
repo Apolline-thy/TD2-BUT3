@@ -12,11 +12,14 @@ function App() {
 
   return (
     <>
-      <section className="flex flex-row">
-        <h1 className="flex justify-center text-2xl font-bold">Our pricing</h1>
-        <Toggle active={isMonthly} onChange={handleToggle}></Toggle>
-
-        <ul className="flex flex-row justify-center gap-4">
+      <section className="flex flex-col items-center justify-center gap-4 p-4">
+        <div className="flex flex-col items-center justify-center gap-4 p-4">
+          <h1 className="flex justify-center text-2xl font-bold">
+            Our pricing
+          </h1>
+          <Toggle active={isMonthly} onChange={handleToggle}></Toggle>
+        </div>
+        <ul className="flex flex-row justify-center gap-4 font-light">
           {data.map((plan) => (
             <li key={plan.id} className="flex flex-col">
               <Card

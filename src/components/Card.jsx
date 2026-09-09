@@ -5,13 +5,14 @@ function Card({ id, title, price, storage, users, upside, active, monthlyPrice, 
   const displayPrice = isMonthly ? monthlyPrice : annualPrice;
   return (
     <section className={`flex flex-col items-center justify-center rounded-lg  ${cardClass} p-2 shadow-md `}>
-      <p className="text-lg font-semibold">{title}</p>
-      <h1 className="text-4xl font-bold">{price}</h1>
-      <ul className="m-4 flex flex-col items-start justify-start p-4 text-sm ">
+      <div className="flex flex-col items-center justify-center gap-2 p-4">
+      <p className="text-lg">{title}</p>
+      <h1 className="text-5xl font-bold">{displayPrice}</h1>
+      </div>
+      <ul className="m-4 flex flex-col items-center p-4 text-sm ">
         <li>{storage}</li>
         <li>{users}</li>
         <li>{upside}</li>
-        <li>{displayPrice}</li>
       </ul>
 
       <Button active={active}>Learn more</Button>
