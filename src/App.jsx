@@ -5,7 +5,7 @@ import Toggle from "./components/Toggle";
 import { useState } from "react";
 
 function App() {
-  const [isMonthly, setIsMonthly] = useState(false);
+  const [isMonthly, setIsMonthly] = useState(true);
   const handleToggle = () => {
     setIsMonthly(!isMonthly);
   };

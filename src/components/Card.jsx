@@ -6,7 +6,7 @@ function Card({ id, title, price, storage, users, upside, active, monthlyPrice, 
   return (
     <section className={`flex flex-col items-center justify-center rounded-lg  ${cardClass} p-2 shadow-md `}>
       <p className="text-lg font-semibold">{title}</p>
-      <h1 className="text-4xl font-bold"></h1>
+      <h1 className="text-4xl font-bold">{price}</h1>
       <ul className="m-4 flex flex-col items-start justify-start p-4 text-sm ">
         <li>{storage}</li>
         <li>{users}</li>
