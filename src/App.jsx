@@ -27,7 +27,8 @@ function App() {
                 users={plan.users}
                 upside={plan.upside}
                 active={plan.active}
-                anually={plan.anually}
+                monthlyPrice={plan.monthlyPrice}
+                annualPrice={plan.annualPrice}
                 isMonthly={isMonthly}
               />
             </li>
